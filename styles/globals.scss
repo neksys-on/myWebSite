@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap');
+
+// #EA2845  малиновый Nest js
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+  line-height: 1.42857143;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .07rem;
+}
+h1 {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+    letter-spacing: .07rem;
+}
+h2 {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .07rem;
+}
+h3 {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .07rem;
+}
+p {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .03rem;
+}
+
+* {
+  outline: 0!important;
+  box-sizing: border-box;
+}

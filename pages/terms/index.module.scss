@@ -1,0 +1,158 @@
+.wrapper {
+  display: flex;
+  width: 70%;
+
+  overflow: hidden;
+}
+.container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgba(21,21,21,0.9);
+  border-radius: 30px;
+  padding: 20px 70px;
+  color: #fff;
+}
+.title {
+  text-align: center;
+  color: #EA2845;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.container h2{
+  text-align: center;
+  background: rgba(51,51,51,0.7);
+  border-radius: 30px;
+  padding: 20px 40px;
+}
+.container p{
+  width: 100%;
+}
+.otstup {
+  width: 100%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.punkt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  word-wrap: break-word;
+}
+.punkt p{
+  width: 89%;
+}
+.container h4{
+  margin: 13px 5px;
+  color: #EA2845;
+  font-weight: 800;
+  font-size: 18px;
+}
+.container a{
+  color: #EA2845;
+  font-weight: 700;
+  font-size: 18px;
+}
+.container a:hover{
+  color: #EA2845;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width:1000px) {
+  .wrapper {
+    width: 96%;
+  }
+  .container{
+    font-size: 15px;
+    padding: 10px 5%;
+  }
+  .title {
+    margin: 15px 0;
+    font-size: 15px;
+  }
+  .container h2{
+    padding: 15px 25px;
+    font-size: 21px;
+  }
+  .otstup {
+    padding-left: 35px;
+  }
+  .container h4{
+    font-size: 17px;
+  }
+
+  .container a{
+    font-size: 15px;
+  }
+  .container p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .wrapper {
+    width: 96%;
+  }
+  .container{
+    font-size: 14px;
+    padding: 10px 5%;
+  }
+  .title {
+    margin: 14px 0;
+    font-size: 15px;
+  }
+  .container h2{
+    padding: 15px 25px;
+    font-size: 19px;
+  }
+  .otstup {
+    padding-left: 35px;
+  }
+  .container h4{
+    font-size: 16px;
+  }
+
+  .container a{
+    font-size: 14px;
+  }
+  .container p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .wrapper {
+    width: 96%;
+  }
+  .container{
+    font-size: 13px;
+    padding: 10px 5% 10px 5%;
+  }
+  .title {
+    margin: 14px 0;
+    font-size: 11px;
+  }
+  .container h2{
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+  .otstup {
+    padding-left: 0px;
+  }
+  .container h4{
+    font-size: 15px;
+  }
+
+  .container a{
+    font-size: 13px;
+  }
+  .container p{
+    font-size: 13px;
+  }
+}

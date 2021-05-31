@@ -1,0 +1,170 @@
+.wrapper {
+  display: flex;
+  width: 70%;
+
+  overflow: hidden;
+}
+.container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgba(21,21,21,0.9);
+  border-radius: 30px;
+  padding: 20px 8%;
+  color: #fff;
+}
+.title {
+  text-align: center;
+  color: #EA2845;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.container h2{
+  background: rgba(51,51,51,0.7);
+  border-radius: 30px;
+  padding: 20px 40px;
+  text-align:center;
+}
+.container p{
+  width: 100%;
+  font-size: 16px;
+}
+.otstup {
+  padding-left: 20px;
+}
+.container h4{
+  color: #EA2845;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 20px 0 5px 0;
+}
+.container a{
+  color: #EA2845;
+  font-weight: 700;
+  font-size: 18px;
+}
+.container a:hover{
+  text-decoration: underline;
+}
+.offer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.offer_discription {
+  display: flex;
+  flex-direction: column;
+}
+.price {
+  min-width: 96px;
+}
+.hr {
+  width: 100%;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #EA2845;
+}
+
+
+@media screen and (max-width:1000px) {
+  .wrapper {
+    width: 96%;
+  }
+  .container{
+    font-size: 15px;
+    padding: 10px 5%;
+  }
+  .title {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  .container h2{
+    padding: 10px 20px;
+    text-align:center;
+  }
+  .otstup {
+    padding-left: 15px;
+  }
+  .container h4{
+    font-weight: 800;
+    font-size: 17px;
+  }
+  .container a{
+    font-size: 17px;
+  }
+  .price {
+    min-width: 94px;
+  }
+  .container p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .wrapper {
+    width: 96%;
+  }
+  .container{
+    font-size: 14px;
+    padding: 10px 5%;
+  }
+  .title {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .container h2{
+    padding: 10px 20px;
+    text-align:center;
+  }
+  .otstup {
+    padding-left: 10px;
+  }
+  .container h4{
+    font-size: 16px;
+  }
+  .container a{
+    font-size: 16px;
+  }
+  .price {
+    min-width: 92px;
+  }
+  .container p{
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .wrapper {
+    width: 96%;
+  }
+  .container{
+    font-size: 13px;
+    padding: 10px 5%;
+  }
+  .title {
+    margin: 5px 0;
+    font-size: 13px;
+  }
+  .container h2{
+    padding: 10px 20px;
+    text-align:center;
+  }
+  .otstup {
+    padding-left: 10px;
+  }
+  .container h4{
+    font-size: 15px;
+  }
+  .container a{
+    font-size: 15px;
+  }
+  .price {
+    min-width: 92px;
+  }
+  .container p{
+    font-size: 13px;
+  }
+}

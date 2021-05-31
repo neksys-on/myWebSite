@@ -52,22 +52,22 @@ export default function Layout({children, titleMeta='', descriptionMeta='', keyw
           <meta name="msapplication-wide310x150logo" content="/favicons/mstile-310x150.png"/>
           <meta name="msapplication-square310x310logo" content="/favicons/mstile-310x310.png"/>
 
-          <meta name="application-name" content="Веб разработчик, сайт на заказ."/>
+          <meta name="application-name" content="Веб разработчик Дмитрий Савчук, сайт на заказ."/>
 
           <meta property="og:locale" content="ru_RU" />
           <meta property="og:title" content={titleMeta} />
           <meta property="og:description" content={descriptionMeta} />
-          <meta property="og:image" content="https://www.bestjap.ru/titleImage.webp" />
+          <meta property="og:image" content="https://my-web-site-azure.vercel.app/cyberFon.webp" />
           <meta property="og:type" content="website" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content={titleMeta} />
           <meta name="twitter:description" content={descriptionMeta} />
-          <meta name="twitter:image" content="https://www.bestjap.ru/titleImage.webp" />
-          <meta name="twitter:image:alt" content="/titleImage.webp" />
+          <meta name="twitter:image" content="https://my-web-site-azure.vercel.app/cyberFon.webp" />
+          <meta name="twitter:image:alt" content="/cyberFon.webp" />
         </>}
 
         {index===false  && <>
-          <meta name = "robots" content = "noindex, nofollow" />
+          <meta name = "robots" content = "noindex, follow" />
         </>}
 
       </Head>

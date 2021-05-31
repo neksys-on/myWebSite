@@ -7,7 +7,7 @@ export default function Info() {
 
 
   return (
-    <Layout>
+    <Layout titleMeta={'Информация о разработчике'} descriptionMeta={'Информация о разработчике, предоставляющем услуги веб разработки и SEO-продвижения.'} keywordsMeta={'информация, разработчик, веб разработка, SEO, продвижение, услуги'} index={true}>
       <>
         <div className={css.show__content}>
           <div className={css.show__content_2}>

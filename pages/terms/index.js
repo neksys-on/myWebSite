@@ -8,7 +8,7 @@ export default function Info() {
 
 
   return (
-    <Layout>
+    <Layout titleMeta={'Пользовательское соглашение'} descriptionMeta={'Пользовательское соглашение'} keywordsMeta={''} index={false}>
       <>
         <div className={css.wrapper}>
           <div className={css.container}>

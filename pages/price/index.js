@@ -45,7 +45,7 @@ export default function Info() {
 
 
   return (
-    <Layout>
+    <Layout titleMeta={'Прайс лист'} descriptionMeta={'Прайс-лист услуг веб разработки, SEO-продвижения и поддержки вашего сайта.'} keywordsMeta={'прайс, лист, услуги, веб разработка, SEO, продвижение, поддержка сайта'} index={true}>
       <>
         <div className={css.wrapper}>
           <div className={css.container}>

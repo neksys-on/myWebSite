@@ -10,7 +10,7 @@ export default function Title() {
 
 
   return (
-    <Layout titleMeta={'Веб разработка'} descriptionMeta={'Заказать сайт под ключ, можно здесь.'} keywordsMeta={''} index={true} >
+    <Layout titleMeta={'Веб разработка'} descriptionMeta={'Заказать сайт под ключ, можно здесь.'} keywordsMeta={'Веб, разработка, сайт, под ключ, заказать сайт, приложение, разработчик, программист, SEO, продвижение, поддержка'} index={true} >
       {/*Картинка со словом киберпанк*/}
       {/*<MyCanvas idImage={'cyber'} src={'/cyber.png'} width={440} height={112} size={0} velocity={1} numPart={2000}/>*/}
       {/*<div className={css.container}>

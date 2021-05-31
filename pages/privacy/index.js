@@ -8,7 +8,7 @@ export default function Info() {
 
 
   return (
-    <Layout>
+    <Layout titleMeta={'Политика конфиденциальности'} descriptionMeta={'Политика конфиденциальности'} keywordsMeta={''} index={false}>
       <>
         <div className={css.wrapper}>
           <div className={css.container}>

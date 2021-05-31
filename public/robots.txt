@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /privacy
+Disallow: /terms
+Disallow: /api/msgsend
+
+
+Sitemap: https://my-web-site-azure.vercel.app/api/my-sitemap

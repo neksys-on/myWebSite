@@ -109,7 +109,7 @@ export default function Request() {
 
 
   return (
-    <Layout>
+    <Layout titleMeta={'Оставить заявку'} descriptionMeta={'Что бы оставить заявку на создание вашего сайта, заполните форму обратной связи'} keywordsMeta={'форма, обратная связь, оставить заявку, разработка, сайт, заказать сайт, SEO, продвижение'} index={true}>
       <>
         <div id={'application'} className={css.application_container}>
           <div className={css.application_content}>

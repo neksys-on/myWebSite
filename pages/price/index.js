@@ -64,7 +64,7 @@ export default function Info() {
             <div className={css.hr}></div>
             <p>САЙТ:</p>
             <Offer name={'Сайт-визитка'} discription={'Создание личного сайта с нуля.'} price={'2500'} />
-            <Offer name={'Посадочная страница'} discription={'Одностраничный промо-сайт (landing page).'} price={'5500'} />
+            <Offer name={'Посадочная страница'} discription={'Одностраничный промо-сайт (landing page).'} price={'5000'} />
             <Offer name={'Интернет-магазин'} discription={'Сайт с системой управления товарами/услугами с большим набором средств для маркетинга и электронной коммерции.'} price={'35000'} />
             <p>SEO-продвижение:</p>
             <Offer name={'Установка на сайт счетчиков статистики'} discription={'Яндекс метрика, Google Аналитика'} price={'1500'} />

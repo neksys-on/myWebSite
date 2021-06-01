@@ -68,7 +68,7 @@ export default function Presentation() {
           >
             <div className={css.project_content}>
               <div className={css.project_scroll}>
-                <a className={css.project_element1} id={'idCard'} href="https://www.bestjap.ru/">
+                <a className={css.project_element1} id={'idCard'} href="https://www.bestjap.ru/" target={"_blank"}>
                   <div className={css.project_header} id={'idHeader'}><p>Интернет магазин</p></div>
                   <div className={css.project_item1}></div>
                   <div className={css.project_footer} id={'idFooter'}><p>Интерактивный интернет магазин с наворотами</p></div>

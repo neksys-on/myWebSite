@@ -10,10 +10,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: rgba(21,21,21,0.9);
+  background: rgba(11,11,11,0.7);
   border-radius: 30px;
   padding: 20px 70px;
   color: #fff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -khtml-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
 }
 .title {
   text-align: center;

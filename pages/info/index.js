@@ -6,10 +6,12 @@ import css from './index.module.scss'
 export default function Info() {
 
 
+
   return (
     <Layout titleMeta={'Информация о разработчике'} descriptionMeta={'Информация о разработчике, предоставляющем услуги веб разработки и SEO-продвижения.'} keywordsMeta={'информация, разработчик, веб разработка, SEO, продвижение, услуги'} index={true}>
       <>
         <div className={css.show__content}>
+          <div className={css.show__content_blur}></div>
           <div className={css.show__content_2}>
             <div className={css.show__frame_left_top}>
               <div className={css.show__frame_left_top_item}></div>
@@ -30,7 +32,19 @@ export default function Info() {
                     <div className={css.content_conteiner}>
                       <div className={css.content_element}>
                         <div className={css.content_question}><h3>Что я умею?</h3></div>
-                        <div className={css.content_answer}><h3>Все что захочу.</h3></div>
+                        <div className={css.content_answer}><h3>Делать крутые веб приложения.</h3></div>
+                      </div>
+                      <div className={css.content_element}>
+                        <div className={css.content_question}><h3>На чем разрабатываю?</h3></div>
+                        <div className={css.content_answer}><h3>В основном на React.js и Next.js, но не ограничиваюсь этим.</h3></div>
+                      </div>
+                      <div className={css.content_element}>
+                        <div className={css.content_question}><h3>Почему React.js/Next.js?</h3></div>
+                        <div className={css.content_answer}><h3>Это позволяет делать Web приложения любой сложности и в случае с Next.js добится наилучшей SEO оптимизации.</h3></div>
+                      </div>
+                      <div className={css.content_element}>
+                        <div className={css.content_question}><h3>Могу ли я сделать сайт с технологией AMP?</h3></div>
+                        <div className={css.content_answer}><h3>Да, но даже без нее у меня получается делать сайты с PageSpeed 99-100</h3></div>
                       </div>
                       <div className={css.content_element}>
                         <div className={css.content_question}><h3>Мое главное приемущество?</h3></div>

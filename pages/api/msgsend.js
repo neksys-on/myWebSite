@@ -3,10 +3,6 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function (req, res) {
   try {
-    const doing = req.body.do
-    const textMsg = req.body.text
-    const from_phone_number = req.body.from
-    const to_phone_number = req.body.to
 
     async function msgsend(doing, textMsg, from_phone_number, to_phone_number) {
       const whatsApp_URL = 'http://194.87.103.68:5555/api/sendWhatsapp'
@@ -22,10 +18,13 @@ export default async function (req, res) {
           to: to_phone_number,
          }),
       })
+      const respMsg = await responseWA.json()
+      if (respMsg.status === 'Complete') {
+        console.log('yea comlete!')
+      }
     }
 
-    msgsend(doing, textMsg, from_phone_number, to_phone_number)
-    msgsend('send', '---------------', '+79673055577', '+79086752252')
+    await msgsend(req.body.do, req.body.text, req.body.from, req.body.to)
 
     res.status(201)
     res.json({status: 'Complete'})

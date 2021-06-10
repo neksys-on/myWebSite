@@ -10,7 +10,6 @@ export default async function (req, res) {
 
     async function msgsend(doing, textMsg, from_phone_number, to_phone_number) {
       const whatsApp_URL = 'http://194.87.103.68:5555/api/sendWhatsapp'
-      console.log(whatsApp_URL)
       const responseWA = await fetch(whatsApp_URL, {
         method: 'POST',
         headers: {

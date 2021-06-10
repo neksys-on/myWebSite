@@ -19,6 +19,39 @@ function stop_highlighting(type) {
   input.style.border = '1px solid #cccccc'
 }
 
+function Blocks({i}) {
+  return (
+    <div className='blocks'> <style jsx>{`
+      .blocks {
+
+          position: absolute;
+          width: 2px;
+          height: 8px;
+          background-color: #050c09;
+
+          transform: rotate(calc(18deg * ${i}));
+          left: 50%;
+          transform-origin: 0 25px;
+          animation: animate 1.9s ease-in-out infinite;
+          animation-delay: calc( 0.05s * ${i})
+      }
+      @keyframes animate {
+        0%,50%
+        {
+          background: #050c09;
+          box-shadow: none;
+        }
+        50.1%,100%
+        {
+          background: #EA2845;
+          box-shadow: 0 0 5px #EA2845, 0 0 15px #EA2845, 0 0 30px #EA2845, 0 0 60px #EA2845, 0 0 90px #EA2845;
+        }
+      }
+    `}</style>
+    </div>
+  )
+}
+
 
 
 export default function Request() {
@@ -37,6 +70,14 @@ export default function Request() {
 
 
   async function msg(doing, textMsg, from_phone_number, to_phone_number) {
+    const button_send = document.querySelector(`#button_send`)
+    button_send.style.display = 'none'
+    const loading = document.querySelector(`#loading`)
+    loading.style.display = 'flex'
+
+    const error = document.querySelector(`#error`)
+    error.style.display = 'none'
+
     const responseWA = await fetch('/api/msgsend', {
       method: 'POST',
       headers: {
@@ -57,7 +98,11 @@ export default function Request() {
       const pop_up = document.querySelector(`#pop_up`)
       application.style.display = 'none'
       pop_up.style.display = 'block'
+    } else {
+      error.style.display = 'block'
     }
+    loading.style.display = 'none'
+    button_send.style.display = 'block'
 
   }
 
@@ -89,7 +134,6 @@ export default function Request() {
       if (name === '' || name.length < 2) { markName.style.display = 'block' } else { markName.style.display = 'none' }
       if (telephone.length < '11') { markPhone.style.display = 'block' } else { markPhone.style.display = 'none' }
       if (description.length < 1) { markDescription.style.display = 'block' } else { markDescription.style.display = 'none' }
-
     }
 
 
@@ -174,8 +218,34 @@ export default function Request() {
             </div>
             <div className={css.application_footer}>
               <div className={css.button}>
-                <div className={css.button_container} onClick={onClickSendRequest}>
+                <div id={'button_send'} className={css.button_container} onClick={onClickSendRequest}>
                   Отправить
+                </div>
+                <div id={'error'} className={css.error}>Отправка не удалась, попробуйте снова.</div>
+                <div id={'loading'} className={css.loading}>
+                  <div style={{margin:'0 30px 0 0'}}>Отправка</div>
+                  <div className={css.loading_blocks}>
+                    <Blocks i={1} />
+                    <Blocks i={2} />
+                    <Blocks i={3} />
+                    <Blocks i={4} />
+                    <Blocks i={5} />
+                    <Blocks i={6} />
+                    <Blocks i={7} />
+                    <Blocks i={8} />
+                    <Blocks i={9} />
+                    <Blocks i={10} />
+                    <Blocks i={11} />
+                    <Blocks i={12} />
+                    <Blocks i={13} />
+                    <Blocks i={14} />
+                    <Blocks i={15} />
+                    <Blocks i={16} />
+                    <Blocks i={17} />
+                    <Blocks i={18} />
+                    <Blocks i={19} />
+                    <Blocks i={20} />
+                  </div>
                 </div>
               </div>
             </div>

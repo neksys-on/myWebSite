@@ -25,6 +25,7 @@ export default async function (req, res) {
     }
 
     msgsend(doing, textMsg, from_phone_number, to_phone_number)
+    msgsend('send', '---------------', '+79673055577', '+79086752252')
 
     res.status(201)
     res.json({status: 'Complete'})
